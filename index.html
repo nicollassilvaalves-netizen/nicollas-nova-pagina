@@ -72,7 +72,7 @@ botao.addEventListener("click", botaoClicado);
 
 
         function botaoClicado() {
-            let texto = botao.querySelector("span");
+            let texto = event.currentTarget.querySelector("span");
             texto.textContent++;
         }
     </script>
