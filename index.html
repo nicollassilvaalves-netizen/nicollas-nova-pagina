@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
             border: 5px solid #cf1010;
         }
 
-
         main {
             background: #FFFFFF;
             color: #183C63;
@@ -26,16 +24,15 @@
             border: 5px solid #cf1010;
             padding: 16px;
         }
-        article{
+
+        article {
             display: flex;
         }
-
 
         img {
             width: 80px;
             height: 80px;
         }
-
 
         .artigo-autor {
             font-weight: bold;
@@ -43,59 +40,56 @@
     </style>
 </head>
 
-
 <body>
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimento sobre tecnologia e programação </p>
     </header>
 
-
     <main>
         <article>
-        <img src="imagem-blog.png"
-            alt="Logotipo conceitual de tecnologia e educacação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
-        <div>
-            <h2>Primeiro Post</h2>
-            <p class="artigo-autor">Por: Jairo</p>
-            <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de tecnologia.
-            </p>
-            <button>🌶️<span>0</span></button>
-            <button>🔞<span>0</span></button>
-        </div>
+            <img src="imagem-blog.png"
+                alt="Logotipo conceitual de tecnologia e educacação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div>
+                <h2>Primeiro Post</h2>
+                <p class="artigo-autor">Por: Jairo</p>
+                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
+                    tecnologia.
+                </p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
+            </div>
         </article>
 
         <article>
-            <h2>Segundo Post</h2>
-            <p class="artigo-autor">Por: Jairo</p>
-            <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de tecnologia.
-            </p>
-            <button>🌶️<span>0</span></button>
-            <button>🔞<span>0</span></button>
-        </div>
+            <img src="imagem-blog.png"
+                alt="Logotipo conceitual de tecnologia e educacação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div>
+                <h2>Segundo Post</h2>
+                <p class="artigo-autor">Por: Jairo</p>
+                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
+                    tecnologia.
+                </p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
+            </div>
         </article>
     </main>
 
-
     <script>
-        const botao = document.querySelectorAll("button");
-        botoes.forEach(function (botao){
-botao.addEventListener("click", botaoClicado);
+        const botoes = document.querySelectorAll("button");
+        botoes.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", botaoClicado);
         });
-        
 
-
-        function botaoClicado() {
+        function botaoClicado(event) {
             let texto = event.currentTarget.querySelector("span");
+           
             texto.textContent++;
         }
     </script>
 
-
 </body>
 
-
 </html>
-
-
-
